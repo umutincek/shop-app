@@ -1,0 +1,27 @@
+.nav {
+  margin-left: 10px;
+  width: 200%;
+}
+.icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.3rem;
+  cursor: pointer;
+}
+.icon:after {
+  content: attr(data-count);
+  position: absolute;
+  background: #ff6600;
+  height: 1.7rem;
+  top: 0.8rem;
+  right: 1.5rem;
+  width: 1.7rem;
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid #ff6600;
+  font-family: sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+<table *ngIf="productList.length > 0; else elseBlock" class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Ürün Resmi</th>
+      <th scope="col">Ürün Adı</th>
+      <th scope="col">Adet</th>
+      <th scope="col">Fiyat</th>
+      <th scope="col">İşlem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of productList">
+      <td> <img [src]="product.imageUrl" width="150" height="150"> </td>
+      <td> {{product.name}} </td>
+      <td>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <button [disabled]="product.count === 1" (click)="decrease(product.id)" class="btn btn-primary">-</button>
+          </div>
+          <input type="text" class="form-control" [ngModel]="product.count">
+          <div class="input-group-append">
+            <button (click)="increase(product.id)" class="btn btn-primary">+</button>
+          </div>
+        </div>
+      </td>
+      <td> {{product.price * product.count | currency:"USD":true:"1.2-2"}}</td>
+      <td>
+        <a (click)="removeProduct(product.id)" class="btn btn-danger">Sepetten Çıkar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #elseBlock>
+  <h3>Sepetinizde ürün bulunmamaktadır.</h3>
+</ng-template>
+<span *ngIf="productList.length > 0">
+  <h3 style="font-weight: normal;"><b>Total Price:</b> {{totalPrice | currency:"USD":true:"1.2-2"}}</h3>
+</span>

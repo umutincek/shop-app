@@ -1,0 +1,22 @@
+<div class="row">
+  <!-- <h3 class="col-md-12">{{title}}</h3> -->
+  <app-category></app-category>
+  <div class="col-md-12">
+    <input [(ngModel)]="filterText" id="productName" class="form-control" type="text" placeholder="Arama metninizi giriniz...">
+    <small *ngIf="filterText !== ''">Şu an <b>{{filterText}}</b> aradınız</small>
+  </div>
+  <div class="productBox" *ngFor="let product of products | productFilter: filterText" style="width: 18rem">
+    <img [src]="product.imageUrl" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}} ({{product.price | currency:"USD":true:"1.2-2"}})</h5>
+      <p class="card-text">
+        {{product.description}}
+      </p>
+      <a class="btn btn-primary" *ngIf="!isCart(product.id); else elseBlock" (click)="addToCart(product)">Sepete Ekle</a>
+      <ng-template #elseBlock>
+        <a class="btn btn-danger" (click)="removeItem(product.id)">Sepetten Çıkar</a>
+      </ng-template>
+    </div>
+  </div>
+</div>
+

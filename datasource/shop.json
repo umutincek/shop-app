@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 20000,
+      "description": "Macbook Pro 2020...",
+      "imageUrl": "https://o.aolcdn.com/images/dims?thumbnail=980%2C653&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2019-07%2F1fd0d670-a89e-11e9-8e6f-a95165178d01&client=amp-blogside-v2&signature=27adcd2012111b875bd05277770faf0cdded26ee",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "Telefon",
+      "price": 4000,
+      "description": "Iphone SE 2020...",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-se-red-select-2020_GEO_EMEA?wid=834&hei=1000&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1586574260374",
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "name": "Mouse",
+      "price": 100,
+      "description": "Logitech...",
+      "imageUrl": "https://o.aolcdn.com/images/dims?thumbnail=980%2C653&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2019-07%2F1fd0d670-a89e-11e9-8e6f-a95165178d01&client=amp-blogside-v2&signature=27adcd2012111b875bd05277770faf0cdded26ee",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "name": "Laptop",
+      "price": 20000,
+      "description": "Macbook Pro 2020...",
+      "imageUrl": "https://o.aolcdn.com/images/dims?thumbnail=980%2C653&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2019-07%2F1fd0d670-a89e-11e9-8e6f-a95165178d01&client=amp-blogside-v2&signature=27adcd2012111b875bd05277770faf0cdded26ee",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "name": "Buzdolabı",
+      "description": "ArçeliK A++ no frost buzdolabı...",
+      "imageUrl": "https://cdn.cimri.io/image/1000x1000/arelikeialtkombitipibuzdolab_183665263.jpg",
+      "price": 1500,
+      "categoryId": "3"
+    },
+    {
+      "id": 6,
+      "name": "Iphone 12",
+      "description": "Apple'ın son model telefonu Iphone 12 mükemmel özellikleriyle görücüye çıkıyor.",
+      "imageUrl": "https://i4.hurimg.com/i/hurriyet/75/750x422/5ecb54b567b0a90cbc757bc6.jpg",
+      "price": 13000,
+      "categoryId": "2"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "name": "Telefon"
+    },
+    {
+      "id": 3,
+      "name": "Beyaz Eşya"
+    }
+  ]
+}
